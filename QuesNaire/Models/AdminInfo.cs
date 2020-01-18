@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,7 +15,7 @@ namespace QuesNaire.Models
         private string manage_password;   //  管理员密码
         private string manage_name;       //  管理员账号名
 
-        public AdminInfo(){}
+        public AdminInfo() { }
 
         public AdminInfo(int manage_id, string manage_account, string manage_password, string manage_name)
         {
@@ -25,9 +25,49 @@ namespace QuesNaire.Models
             this.Manage_name = manage_name;
         }
 
-        public int Manage_id { get => manage_id; set => manage_id = value; }
-        public string Manage_account { get => manage_account; set => manage_account = value; }
-        public string Manage_password { get => manage_password; set => manage_password = value; }
-        public string Manage_name { get => manage_name; set => manage_name = value; }
+        public int Manage_id
+        {
+            get
+            {
+                return manage_id;
+            }
+            set
+            {
+                manage_id = value;
+            }
+        }
+        public string Manage_account
+        {
+            get
+            {
+                return manage_account;
+            }
+            set
+            {
+                manage_account = value;
+            }
+        }
+        public string Manage_password
+        {
+            get
+            {
+                return manage_password;
+            }
+            set
+            {
+                manage_password = value;
+            }
+        }
+        public string Manage_name
+        {
+            get
+            {
+                return manage_name;
+            }
+            set
+            {
+                manage_name = value;
+            }
+        }
     }
 }
